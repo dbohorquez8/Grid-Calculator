@@ -1,0 +1,32 @@
+- content_for :title do
+  Grid Calculator
+
+.container-fluid
+  .row-fluid
+    %h1.pushv2.aligncenter Grid Calculator
+    .span4.center
+      .well
+        %h4.pushv2 Enter the desired values for your grid
+        %form(method="get" action="/")
+          .field.span6.center
+            %label Wrapper Width
+            %input.span12(type="number" name="wrapper_width" value="#{@wrapper_width.to_i}" placeholder="960")
+          .field.pushv2.span6.center
+            %label Gutter Width
+            %input.span12(type="number" name="gutter_width" value="#{@gutter_width.to_i}" placeholder="20")
+          .aligncenter
+            %input.btn.btn-success.btn-large(type="submit" value="Generate!")
+
+  -if @wrapper_width != 0
+    .span6.center
+      %h2.pushv2.aligncenter Voilà!
+      %pre
+        = partial "_code"
+      
+
+
+- content_for :javascript do
+  :javascript
+    $(function(){
+
+    });

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@import url(bootstrap.min.css);
+
+/* -----------------------------------------------------------
+
+- Title: Grid Calculator Main Stylesheet
+- Author: David Bohorquez (http://koombea.com)
+
+----------------------------------------------------------- */
+.clear{clear:left;}
+
+.center{
+  float:none !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+	overflow:hidden;
+}
+
+.alignleft{text-align:left !important;}
+.alignright{text-align:right !important;}
+.aligncenter{text-align:center !important;}
+
+.pushv2{margin-bottom:20px !important;}
+
+pre{font-family:Monaco,Menlo,Consolas,"Courier New",monospace;}
+
+#footer{
+  font-size: 12px;
+  padding: 20px 0;
+  text-align: center;
+}
